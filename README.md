@@ -15,21 +15,21 @@ lost dog, tweetpet, VioletsCRUK, tsarnick, SallytheShizzle, mcraddictal, Karen23
 
 3. Who is are the most mentioned Twitter users? (not finished in java)
 
-4.Who are the most active Twitter users (top ten)? 
+4. Who are the most active Twitter users (top ten)? 
 Result:
 lost_dog, webwoke, tweetpet, SallytheShizzle, VioletsCRUK, mcraddictal, tsarnick, what_bugs_u, Karen230683, DarkPiano
 
 5. Who are the five grumpiest(1) and five happiest(2)?
 Result(1):
-lizzyswims24
-alanarubi
-sarnwardhan
-lettherestdie
+lizzyswims24,
+alanarubi,
+sarnwardhan,
+lettherestdie,
 iverissc
 
 Result(2):
-adbillingsley
-bobzipp
-sdancingsteph
-bpbabe
+adbillingsley,
+bobzipp,
+sdancingsteph,
+bpbabe,
 RobFoxKerr
