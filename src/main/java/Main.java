@@ -33,7 +33,7 @@ public class Main {
             	boolean shouldClose = false;
             	switch (input){
                     case 1:
-                        System.out.println("Distinct tweeter users: " + query.question1(db));
+                        query.question1(db);
                         break;
                     case 2:
                         query.question2(db);
