@@ -47,6 +47,14 @@ public class QueryBuilder {
             System.out.println(dbObject.get("_id"));
         }
     }
+    // mongoquery
+//    "db.twitter.aggregate(["   
+//                "       { $match: { text: new RegExp('@\\w+', 'ig'), " +
+//                "       { $group: { _id: '$user', tweets: { $sum: 1 } }," +
+//                "       { $sort: { tweets: -1 }," +
+//                "       { $limit: 5}," +
+//                "       ],{ allowDiskUse: true })";
+    
 
     //Who are the most active Twitter users (top ten)?
     public void question4(MongoDatabase db) {
@@ -76,7 +84,6 @@ public class QueryBuilder {
                 new Document("$sort", new Document("average_polarity", 1)),
                 new Document("$limit", 5)
         )).allowDiskUse(true);
-
         for (Document dbObject : output) {
             System.out.println(dbObject.get("_id"));
         }
@@ -91,16 +98,6 @@ public class QueryBuilder {
                 new Document("$sort", new Document("average_polarity", -1)),
                 new Document("$limit", 5)
         )).allowDiskUse(true);
-//        return "db.tweets.aggregate( [" +
-//                "    {     $group: {       _id: '$user'," +
-//                "       average_polarity: { $avg: '$polarity' }," +
-//                "     }," +
-//                "   }, " +
-//                "  {     $sort: { average_polarity: -1 }," +
-//                "   }," +
-//                "   {     $limit: 5,   }" +
-//                ",]" +
-//                ",{ allowDiskUse: true })";
         for (Document dbObject : output) {
             System.out.println(dbObject.get("_id"));
         }
